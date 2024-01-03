@@ -1,7 +1,7 @@
 <template>
   <HeaderApp />
+  <AsideApp />
   <MainApp>
-    <AsideApp />
     <CalenderApp />
   </MainApp>
   <FooterApp />
@@ -30,4 +30,7 @@ export default {
 @use './components/style/main.scss' as *;
 </style>
 
-
+<!-- 
+cd C:\Users\berna\webapp-learn\webapp
+npm run dev
+-->

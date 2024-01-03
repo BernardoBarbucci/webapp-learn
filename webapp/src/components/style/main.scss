@@ -1,8 +1,35 @@
-@use './partials/mixins' as *;
-@use './partials/variables' as *;
+@use './partials/mixins.scss' as *;
+@use './partials/variables.scss' as *;
 
-// * {
-//     @include reset;
-//     background-color: $theme-color;
-//     font-family: 'Roboto Mono', monospace;
-// }
+* {
+    @include reset;
+    // font-family: 'Roboto Mono', monospace;
+    font-family: 'Dosis', sans-serif;
+}
+
+#app {
+    // eventualmente da cambiare
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #0c0d0f, #2a2e35);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid yellow;
+}
+
+.border {
+    border: 2px solid lime;
+}
+
+// HEADER
+header {
+    height: 10vh;
+
+    section {
+        @include flex-header;
+    }
+}

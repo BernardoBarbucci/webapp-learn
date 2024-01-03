@@ -1,7 +1,9 @@
 <template>
-    <div>
-
-    </div>
+    <section>
+        <h1>
+            FOOTER
+        </h1>
+    </section>
 </template>
 <script>
 export default {
