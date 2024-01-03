@@ -28,6 +28,7 @@
 // HEADER
 header {
     height: 10vh;
+    color: white;
 
     section {
         @include flex-header;

@@ -2,13 +2,17 @@
   <header>
     <section class="container">
       <div class="logo border">
-        <h1>logo</h1>
+        <h1>Logo</h1>
       </div>
       <div class="name border">
-        <h1>name</h1>
+        <h1>ShareDays</h1>
       </div>
       <div class="settings border">
-        <h1>settings</h1>
+        <div class="menu-bar" @click="transformMenuBar">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </div>
     </section>
   </header>
@@ -17,7 +21,44 @@
 <script>
 export default {
   name: 'header',
+  methods: {
+    transformMenuBar(event) {
+      event.currentTarget.classList.toggle("change");
+    }
+  }
 }
+
 </script>
 
-<style lang="scss"></style>
+<style scoped>
+/* menu-bar */
+.menu-bar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 15px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-3px, 3.5px);
+  transform: rotate(-45deg) translate(-3px, 3.5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-3px, -4.5px);
+  transform: rotate(45deg) translate(-3px, -4.5px);
+}
+</style>
