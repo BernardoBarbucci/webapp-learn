@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="border">
         <h1>CALENDER</h1>
     </section>
 </template>

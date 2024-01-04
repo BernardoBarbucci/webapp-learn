@@ -1,11 +1,10 @@
 @use './partials/mixins.scss' as *;
 @use './partials/variables.scss' as *;
 
-
 * {
     @include reset;
-    // font-family: 'Roboto Mono', monospace;
-    font-family: 'Dosis', sans-serif;
+    // font-family: 'Roboto Mono', monospace; // Commentato
+    font-family: 'Dosis', sans-serif; // Attivato
     overflow: hidden;
 }
 
@@ -16,7 +15,7 @@
     background: linear-gradient(180deg, #0c0d0f, #2a2e35);
 }
 
-.container {
+.custom_container {
     height: 100%;
     width: 100%;
     padding: 1rem;
@@ -34,5 +33,11 @@ header {
 
     section {
         @include flex-header;
+
+        .custom_title {
+            h1 {
+                font-family: 'Monoton', sans-serif;
+            }
+        }
     }
 }

@@ -1,10 +1,10 @@
 <template>
   <header>
-    <section class="container">
+    <section class="custom_container">
       <div class="logo">
-        <h1>Logo</h1>
+        <i class="fa-solid fa-calendar-days"></i>
       </div>
-      <div class="name">
+      <div class="custom_title">
         <h1>ShareDays</h1>
       </div>
       <div class="settings">
@@ -31,6 +31,17 @@ export default {
 </script>
 
 <style scoped>
+/* logo */
+.logo {
+  i {
+    font-size: 1.8rem;
+  }
+}
+
+.custom_title h1 {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
 /* menu-bar */
 .menu-bar {
   display: inline-block;
