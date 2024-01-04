@@ -1,6 +1,7 @@
 @use './partials/mixins.scss' as *;
 @use './partials/variables.scss' as *;
 
+
 * {
     @include reset;
     // font-family: 'Roboto Mono', monospace;

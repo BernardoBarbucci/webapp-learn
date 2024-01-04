@@ -1,7 +1,7 @@
 <template>
     <section class="container-fluid d-flex flex-row">
-        <AsideApp />
-        <CalenderApp @calenderEvent="handleCalenderEvent" />
+        <AsideApp class="col-2" />
+        <CalenderApp class="col-10" />
     </section>
 </template>
   
@@ -10,16 +10,11 @@ import CalenderApp from '../components/CalenderApp.vue';
 import AsideApp from '../components/AsideApp.vue';
 
 export default {
-    name: 'MainApp',
+    name: 'main',
     components: {
         AsideApp,
-        CalenderApp,
-    },
-    methods: {
-        handleCalenderEvent(data) {
-            // Gestisci l'evento proveniente da CalenderApp
-            console.log('Calender event:', data);
-        },
-    },
+        CalenderApp
+    }
 };
 </script>
+  
