@@ -1,7 +1,7 @@
 <template>
   <HeaderApp />
-  <AsideApp />
   <MainApp>
+    <AsideApp />
     <CalenderApp />
   </MainApp>
   <FooterApp />

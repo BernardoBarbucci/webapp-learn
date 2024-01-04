@@ -1,9 +1,9 @@
 <template>
-    <section>
+    <aside class="col-12 border">
         <h1>
             ASIDE
         </h1>
-    </section>
+    </aside>
 </template>
 
 <script>
@@ -12,5 +12,4 @@ export default {
 }
 </script>
 
-<style lang="">    
-</style>
+<style></style>

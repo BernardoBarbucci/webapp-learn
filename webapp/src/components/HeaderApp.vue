@@ -1,13 +1,13 @@
 <template>
   <header>
     <section class="container">
-      <div class="logo border">
+      <div class="logo">
         <h1>Logo</h1>
       </div>
-      <div class="name border">
+      <div class="name">
         <h1>ShareDays</h1>
       </div>
-      <div class="settings border">
+      <div class="settings">
         <div class="menu-bar" @click="transformMenuBar">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -40,8 +40,8 @@ export default {
 .bar1,
 .bar2,
 .bar3 {
-  width: 15px;
-  height: 2px;
+  width: 20px;
+  height: 1.9px;
   background-color: #ffffff;
   margin: 3px 0;
   transition: 0.4s;
