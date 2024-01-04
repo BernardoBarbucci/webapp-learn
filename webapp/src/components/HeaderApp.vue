@@ -30,7 +30,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 /* logo */
 .logo {
   i {
@@ -39,7 +39,13 @@ export default {
 }
 
 .custom_title h1 {
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  text-shadow: 3px 3px 5px rgba(206, 0, 0, 0.7);
+  transition: color 0.4s ease, text-shadow 0.3s ease;
+}
+
+.custom_title h1:hover {
+  color: red;
+  text-shadow: 3px 3px 5px rgba(90, 0, 0, 0.7);
 }
 
 /* menu-bar */
